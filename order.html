@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/font-awesome.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="icon" href="images/favicon.png" />
+        <link rel="stylesheet" href="css/lightbox.min.css" />
+        <title>Jimmy's Diner</title>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav
+            class="navbar navbar-expand-lg fixed-top navbar-dark row d-flex justify-content-between"
+        >
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img
+                        class="jimmyslogo"
+                        src="images/jimmyslogo.png"
+                        alt="Jimmy's Diner Logo"
+                        width="230"
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse justify-content-end"
+                    id="navbarNavDropdown"
+                >
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item">
+                            <a
+                                href="index.html"
+                                class="nav-link fw-semibold text-white"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="order.html"
+                                class="nav-link fw-semibold text-white"
+                                >Order</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="hero text-white pt-8">
+                <div class="container">
+                    <div class="col-md-6"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Menu Section -->
+        <div class="container mb-6" id="menu">
+            <div class="row justify-content-center pt-5 mt-1">
+                <div class="col-md-10">
+                    <!-- Navigation Tabs -->
+                    <ul class="nav nav-pills mb-3" id="menuTabs" role="tablist">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                id="main-tab"
+                                data-bs-toggle="pill"
+                                href="#main"
+                                role="tab"
+                                >Main</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                id="sides-tab"
+                                data-bs-toggle="pill"
+                                href="#sides"
+                                role="tab"
+                                >Sides</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                id="drinks-tab"
+                                data-bs-toggle="pill"
+                                href="#drinks"
+                                role="tab"
+                                >Drinks</a
+                            >
+                        </li>
+                    </ul>
+
+                    <!-- Menu Content -->
+                    <div class="tab-content mb-10" id="menuContent">
+                        <!-- Main Section -->
+                        <div
+                            class="menu-section active"
+                            id="main"
+                            role="tabpanel"
+                            aria-labelledby="main-tab"
+                        >
+                            <br />
+                            <h4>Burgers</h4>
+                            <p class="mealdesc pt-3">All Meals include Fries</p>
+                            <!-- Existing Dishes -->
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">
+                                                Jimmy's Famous Beef Burger
+                                            </h5>
+                                            <p class="mb-0 description">
+                                                beef, cheese, lettuce
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$15.00</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="Jimmy's Famous Beef Burger"
+                                        data-price="12.00"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- New Main Dish -->
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">
+                                                Grilled Chicken Sandwich
+                                            </h5>
+                                            <p class="mb-0 description">
+                                                chicken breast, tomato, lettuce
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$10.00</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="Grilled Chicken Sandwich"
+                                        data-price="10.00"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">
+                                                Fried Chicken Sandwich
+                                            </h5>
+                                            <p class="mb-0 description">
+                                                Breaded and fried chicken
+                                                breast, tomato, lettuce
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$12.00</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="Grilled Chicken Sandwich"
+                                        data-price="10.00"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">
+                                                Jimmy's Special
+                                            </h5>
+                                            <p class="mb-0 description">
+                                                chicken breast , beef smashed
+                                                burger, tomato, lettuce
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$15.00</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="Grilled Chicken Sandwich"
+                                        data-price="10.00"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <br /><br />
+                            <h4 class="pt-3">Pizza</h4>
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">Cheese</h5>
+                                            <p class="mb-0 description">
+                                                The classic, tomato base and
+                                                mozzarela
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$12.00</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="Grilled Chicken Sandwich"
+                                        data-price="10.00"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">
+                                                Ham and Mushroom
+                                            </h5>
+                                            <p class="mb-0 description">
+                                                Tomato base with cured ham and
+                                                mozzarela
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$15.00</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="Grilled Chicken Sandwich"
+                                        data-price="10.00"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">Pepperoni</h5>
+                                            <p class="mb-0 description">
+                                                Tomato base with lashings of
+                                                Pepperoni
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$15.00</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="Grilled Chicken Sandwich"
+                                        data-price="10.00"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sides Section -->
+                        <div
+                            class="menu-section"
+                            id="sides"
+                            role="tabpanel"
+                            aria-labelledby="sides-tab"
+                        >
+                            <br />
+                            <h4>Sides</h4>
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">French Fries</h5>
+                                            <p class="mb-0 description">
+                                                crispy and golden
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$4.50</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="French Fries"
+                                        data-price="4.50"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">Side Salad</h5>
+                                            <p class="mb-0 description">
+                                                Freshly prepared everyday!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$5.50</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="Side Salad"
+                                        data-price="5.50"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">Garlic Bread</h5>
+                                            <p class="mb-0 description">
+                                                Fresh Bread with a healthy
+                                                helping of garlic butter.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$4.00</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="Garlic Bread"
+                                        data-price="4.00"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">Chicken Strips</h5>
+                                            <p class="mb-0 description">
+                                                crispy and golden chicken breast
+                                                strips
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$6.50</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="Chicken Strips"
+                                        data-price="6.50"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Drinks Section -->
+                        <div
+                            class="menu-section"
+                            id="drinks"
+                            role="tabpanel"
+                            aria-labelledby="drinks-tab"
+                        >
+                            <br />
+                            <h4>Drinks</h4>
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">Coffee</h5>
+                                            <p class="mb-0 description">
+                                                hot or iced
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$2.50</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="Coffee"
+                                        data-price="2.50"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">Beer</h5>
+                                            <p class="mb-0 description">
+                                                Iced cold beer
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$3.50</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="beer"
+                                        data-price="3.50"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">Soft Drink</h5>
+                                            <p class="mb-0 description">
+                                                iced cold beverage of choice
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$1.50</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="softDrink"
+                                        data-price="1.50"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row py-2 border-bottom">
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h5 class="mb-0">Milkshake</h5>
+                                            <p class="mb-0 description">
+                                                2 Scoops of either Strawberry,
+                                                Chocolate, Vanilla Ice cream.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-4 d-flex justify-content-between align-items-center"
+                                >
+                                    <span>$4.50</span>
+                                    <button
+                                        class="btn btn-sm btn-primary add-to-cart"
+                                        data-name="milkshake"
+                                        data-price="4.50"
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Icon -->
+        <div class="cart-icon position-fixed bottom-0 end-0 p-3">
+            <button
+                class="btn btn-primary radius-19"
+                data-bs-toggle="modal"
+                data-bs-target="#cartModal"
+            >
+                <i class="fa-solid fa-shopping-cart"></i>
+                <span class="badge bg-danger" id="itemCount">0</span>
+            </button>
+        </div>
+
+        <!-- Cart Modal -->
+        <div
+            class="modal fade"
+            id="cartModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="cartModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cartModalLabel">
+                            Your Cart
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="cartItems"></div>
+                        <hr />
+                        <div class="mb-3">
+                            <label for="discountCode" class="form-label"
+                                >Discount Code</label
+                            >
+                            <div class="input-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="discountCode"
+                                    placeholder="Enter your code"
+                                />
+                                <button
+                                    class="btn btn-primary"
+                                    id="applyDiscountButton"
+                                >
+                                    Apply
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="checkoutButton"
+                        >
+                            Continue to Payment
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment Modal -->
+        <div
+            class="modal fade"
+            id="paymentModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="paymentModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="paymentModalLabel">
+                            Payment Information
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label"
+                                >Card Number</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="cardNumber"
+                                placeholder="1234 5678 9012 3456"
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="cardExpiry" class="form-label"
+                                >Expiry Date</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="cardExpiry"
+                                placeholder="MM/YY"
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="cardCVC" class="form-label">CVC</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="cardCVC"
+                                placeholder="123"
+                            />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Cancel
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="confirmPaymentButton"
+                        >
+                            Confirm Payment
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thank You Modal -->
+        <div
+            class="modal fade"
+            id="thankYouModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="thankYouModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="thankYouModalLabel">
+                            Thank You!
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Your order has been received, You will receive an
+                            email confirmation and it will be with you shortly!
+                        </p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="border-top border-primary bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a
+                                    href="https://github.com/Pauljd1"
+                                    target="_blank"
+                                    class="text-white"
+                                >
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a
+                                    href="https://www.linkedin.com/in/paul-davidson-4641b4307"
+                                    target="_blank"
+                                    class="text-white"
+                                >
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-end d-none d-md-block">
+                            Copyright &copy; Jimmy's Diner 2024
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

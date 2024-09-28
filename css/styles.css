@@ -1,0 +1,220 @@
+/* Importing Google Font Merienda */
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+
+/* General Styling for Header */
+.header {
+    background: #151515 url("../images/burger.webp") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Text and Social Icons in Header */
+.header .roles {
+    font-family: "Lora", serif;
+}
+
+.header .social {
+    position: absolute;
+    bottom: 50px;
+}
+
+/* Navbar Toggler and Logo Styling */
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+/* Navbar Transition and Hover Effects */
+.navbar {
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .btn-outline-light:hover {
+    color: var(--bs-dark);
+}
+
+.navbar-sticky {
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Jimmy's Logo Alignment */
+.jimmyslogo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Modal Dialog for Larger Screens */
+.modal-dialog {
+    max-width: 1040px;
+}
+
+/* Project Hover Effect */
+.project:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+}
+
+/* About Section Image Styling */
+.about-img {
+    width: 200px;
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 767px) {
+    .header .social i {
+        font-size: 30px;
+    }
+
+    .header .roles {
+        font-size: 18px !important;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+}
+
+/* Navbar Background for Smaller Screens */
+@media (max-width: 1000px) {
+    .navbar {
+        background: var(--bs-dark);
+    }
+}
+
+/* Floating Cart Button Styling */
+#floating-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+#cart-count {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #dc3545;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 0.75rem;
+}
+
+/* Icon Margin for Better Spacing */
+.icon {
+    margin-right: 15px;
+}
+
+/* Description Styling */
+.description {
+    opacity: 0.6;
+    font-size: 0.875rem;
+    margin-top: 2px;
+}
+
+/* Menu Section Visibility Control */
+.menu-section {
+    display: none;
+}
+
+.menu-section.active {
+    display: block;
+}
+
+/* Image Styling */
+img {
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Cart Item Spacing */
+.cart-item {
+    margin-bottom: 15px;
+}
+
+/* Remove Item Button Spacing */
+.remove-item {
+    margin-left: 10px;
+}
+
+.radius-19 {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    #floating-cart {
+        top: 80px;
+        right: 15px;
+    }
+
+    .radius-19 {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    #floating-cart {
+        top: 100px;
+        right: 10px;
+    }
+
+    .radius-19 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .radius-19 i {
+        font-size: 1rem;
+    }
+
+    .radius-19 .badge {
+        font-size: 0.75rem;
+    }
+}
+
+h4,
+.mealdesc {
+    text-decoration: underline;
+    font-family: "Merienda", cursive;
+}
+
+.btn {
+    position: relative;
+    z-index: 10;
+    margin-top: 20px;
+    color: white;
+}
+
+.navbar-sticky {
+    transition: background-color 0.3s ease;
+}

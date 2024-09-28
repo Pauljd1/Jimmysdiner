@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/font-awesome.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="icon" href="images/favicon.png" />
+        <link rel="stylesheet" href="css/lightbox.min.css" />
+        <title>Jimmy's Diner</title>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav
+            class="navbar navbar-expand-lg fixed-top navbar-dark row d-flex justify-content-between"
+        >
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img
+                        class="jimmyslogo"
+                        src="images/jimmyslogo.png"
+                        alt="Jimmy's Diner Logo"
+                        width="230"
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse justify-content-end"
+                    id="navbarNavDropdown"
+                >
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item">
+                            <a
+                                href="index.html"
+                                class="nav-link fw-semibold text-white"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="order.html"
+                                class="nav-link fw-semibold text-white"
+                                >Order</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="header">
+            <!-- Hero -->
+            <div class="hero text-white pt-7">
+                <div class="container">
+                    <div class="col-md-6">
+                        <div
+                            class="text-container p-4 d-flex flex-column justify-content-center h-100 mb-0 text-start"
+                        >
+                            <h1 class="display-3 fw-bold">
+                                Welcome to Jimmy's Diner
+                            </h1>
+                            <p class="lead">
+                                At Jimmy's Diner, we serve the best,
+                                mouth-watering burgers in town. Every burger is
+                                crafted with 100% grass-fed beef, fresh
+                                locally-sourced ingredients, and served on
+                                artisan buns, ensuring a perfect bite every
+                                time.
+                            </p>
+                            <!-- Button -->
+                            <a
+                                href="order.html"
+                                class="btn btn-primary text-white fw-bold"
+                            >
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Icons at the top -->
+        <section class="icons-top py-3 bg-light pt-5 pb-5">
+            <div class="container-xl">
+                <div
+                    class="row d-flex justify-content-between align-items-start"
+                >
+                    <!-- Location -->
+                    <div
+                        class="col-md-4 d-flex align-items-start gap-3 mb-4 mb-md-0"
+                    >
+                        <i class="fa fa-map-marker fa-2x text-primary"></i>
+                        <div>
+                            <h6 class="fw-bold mb-0">Location</h6>
+                            <p class="text-muted mb-0">
+                                1234 Flavor Street, Burger Town, BT 56789
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Opening Hours -->
+                    <div
+                        class="col-md-4 d-flex align-items-start gap-3 mb-4 mb-md-0"
+                    >
+                        <i class="fa fa-clock fa-2x text-secondary"></i>
+                        <div>
+                            <h6 class="fw-bold mb-0">Opening Hours</h6>
+                            <p class="text-muted mb-0">
+                                <strong>Dinner:</strong> Tue-Sun 5pm-9:30pm
+                                <br />
+                                <strong>Lunch:</strong> Tue-Sat 11:30am-3pm
+                                <br />
+                                <span class="text-primary">CLOSED MONDAY</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Call Us -->
+                    <div
+                        class="col-md-4 d-flex align-items-start gap-3 mb-4 mb-md-0"
+                    >
+                        <i class="fa fa-phone fa-2x text-primary"></i>
+                        <div>
+                            <h6 class="fw-bold mb-0">
+                                Call Us To Order If You Prefer:
+                            </h6>
+                            <p class="text-muted mb-0">Phone: (123) 456-7890</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meals -->
+        <section class="portfolio py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h4 class="text-uppercase fw-bold text-primary">
+                        A Selection Of Our Specialities:
+                    </h4>
+                    <hr class="w-25 mx-auto" />
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="project shadow-lg rounded-5">
+                            <a
+                                href="images/food1.jpg"
+                                data-lightbox="images"
+                                data-title="Burgers"
+                            >
+                                <img
+                                    src="images/food1.jpg"
+                                    alt="Burgers"
+                                    class="img-fluid rounded-3 w-100"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="project shadow-lg rounded-5">
+                            <a
+                                href="images/food2.jpg"
+                                data-lightbox="images"
+                                data-title="Milkshake"
+                            >
+                                <img
+                                    src="images/food2.jpg"
+                                    alt="Milkshake"
+                                    class="img-fluid rounded-3 h-10"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="project shadow-lg rounded-5">
+                            <a
+                                href="images/food3.webp"
+                                data-lightbox="images"
+                                data-title="Pizza"
+                            >
+                                <img
+                                    src="images/food3.webp"
+                                    alt="Pizza"
+                                    class="img-fluid rounded-3"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="project shadow-lg rounded-5">
+                            <a
+                                href="images/food4.webp"
+                                data-lightbox="images"
+                                data-title="Burger"
+                            >
+                                <img
+                                    src="images/food4.webp"
+                                    alt="Burger"
+                                    class="img-fluid rounded-3"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h4 class="text-uppercase fw-bold text-primary">
+                        What Our Customers Are Saying:
+                    </h4>
+                    <hr class="w-25 mx-auto" />
+                </div>
+                <p>
+                    At Jimmy's Diner, we're dedicated to providing exceptional
+                    food and a memorable dining experience. But don't just take
+                    our word for it—here's what some of our satisfied customers
+                    have to say about their visits!
+                </p>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-5 mb-md-0">
+                        <div class="d-flex justify-content-center mb-0">
+                            <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                                class="rounded-circle shadow-1-strong"
+                                width="150"
+                                height="150"
+                            />
+                        </div>
+                        <h5 class="mb-3">Maria Smantha</h5>
+                        <h6 class="text-primary mb-3">Food Critic</h6>
+                        <p class="px-xl-3">
+                            <i class="fas fa-quote-left pe-2"></i>"Jimmy's
+                            Dinner is a hidden gem! The burger was juicy, the
+                            fries were crispy, and the service was top-notch. I
+                            can't wait to come back and try more from their
+                            menu!"
+                        </p>
+                        <ul
+                            class="list-unstyled d-flex justify-content-center mb-0"
+                        >
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i
+                                    class="fas fa-star-half-alt fa-sm text-warning"
+                                ></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-5 mb-md-0">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp"
+                                class="rounded-circle shadow-1-strong"
+                                width="150"
+                                height="150"
+                            />
+                        </div>
+                        <h5 class="mb-3">John Doe</h5>
+                        <h6 class="text-primary mb-3">Food Enthusiast</h6>
+                        <p class="px-xl-3">
+                            <i class="fas fa-quote-left pe-2"></i>"The best
+                            diner experience I've had in years! The atmosphere
+                            is cozy, and the staff makes you feel right at
+                            home."
+                        </p>
+                        <ul
+                            class="list-unstyled d-flex justify-content-center mb-0"
+                        >
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i
+                                    class="fas fa-star-half-alt fa-sm text-warning"
+                                ></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-5 mb-md-0">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                                class="rounded-circle shadow-1-strong"
+                                width="150"
+                                height="150"
+                            />
+                        </div>
+                        <h5 class="mb-3">Lisa Wilson</h5>
+                        <h6 class="text-primary mb-3">Local Blogger</h6>
+                        <p class="px-xl-3">
+                            <i class="fas fa-quote-left pe-2"></i>"The ambiance
+                            is warm and inviting, and the burgers are simply
+                            unbeatable. Highly recommend the milkshakes!"
+                        </p>
+                        <ul
+                            class="list-unstyled d-flex justify-content-center mb-0"
+                        >
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map -->
+        <section
+            class="location my-5 contact text-bg-dark bg-gradient py-5 mb-0 mt-0"
+        >
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <h3>Our Location</h3>
+                        <p class="mb-4">
+                            Visit us at Jimmy's Diner located in the heart of
+                            Burger Town. Our cozy and inviting atmosphere is the
+                            perfect setting to enjoy delicious meals with
+                            friends and family. Whether you're here for a quick
+                            lunch or a relaxing dinner, we're committed to
+                            making your experience memorable. Check out our
+                            location on the map below and come see us soon!
+                        </p>
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.5303553091994!2d-0.14076024298621118!3d51.51210217963597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d502268421%3A0x6a7d62889992f993!2sRegent+St%2C+Soho%2C+London+W1B+5TH%2C+UK!5e0!3m2!1sen!2sro!4v1476174541049"
+                                width="100%"
+                                height="450"
+                                style="border: 0"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-top border-primary bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a
+                                    href="https://github.com/Pauljd1"
+                                    target="_blank"
+                                    class="text-white"
+                                >
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a
+                                    href="https://www.linkedin.com/in/paul-davidson-4641b4307"
+                                    target="_blank"
+                                    class="text-white"
+                                >
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-end d-none d-md-block">
+                            Copyright &copy; Jimmy's Diner 2024
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+    </body>
+</html>
